@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,41 +13,66 @@
 }
 
 .topo{
-    display: block;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
 }
+
 .centro{
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
-    right: 30%;
+    background-color: #2648ed;
+    width: 80%;
+   
     
 }
 
 .image img{
-height: 400px;
-width: auto;
-background-color: aqua;
+    position: relative;
+    left: -250%;
+    top: 1%;
+    height: 25em;
+    width: auto;
+    z-index: 3;
 }
 
+.circle{
+    position: relative;
+    z-index: 1;
+    height: 400px;
+    width: 400px;
+    background-color:rgb(207, 58, 145);
+    box-shadow:20px 4px 20px 10px #2648ed;
+    border-radius: 50%;
+}
+
+.cPrincipal{
+
+}
 .video img{
     position: absolute;
-    top: 15px;
-    height: 300px;
+    top: 35px;
+    right: 20%;
+    height: 250px;
     width: 400px;
     border: 8px ridge #ffffff;
     border-radius: 15px;
     box-shadow: 20px 4px 20px 10px #2648ed;
+    z-index: 2;
 }
 
 .audio{
     position: absolute;
+    left: 60%;
     bottom: 10px;
 }
 
 .footer{
-
+    background-color: bisque;
 }
 
 .linha{
