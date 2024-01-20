@@ -7,7 +7,9 @@
 }
 
 .container{
-    background-image: linear-gradient(to top left, rgb(9, 131, 254),rgb(207, 58, 145));
+    background-image: url(./assets/background.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
 }
@@ -16,8 +18,12 @@
     display: flex;
     justify-content: center;
     font-family: 'Pacifico', serif;
-    font-size: 25px;
+    text-shadow: 2px 3px 1px rgb(207, 58, 145) ;
+    font-size: 30px;
     color: rgb(255, 255, 255);
+}
+.topo h1{
+    position: relative;
 }
 
 .centro{
@@ -25,8 +31,9 @@
     flex-direction: row;
     justify-content: center;
     position: relative;
-    background-color: #2648ed;
+    bottom:2em;
     width: 80%;
+    margin: auto;
    
     
 }
@@ -34,8 +41,8 @@
 .image img{
     position: relative;
     left: -250%;
-    top: 1%;
-    height: 25em;
+    top: ;
+    height: 20em;
     width: auto;
     z-index: 3;
 }
@@ -43,36 +50,41 @@
 .circle{
     position: relative;
     z-index: 1;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     background-color:rgb(207, 58, 145);
-    box-shadow:20px 4px 20px 10px #2648ed;
+    box-shadow:2px 4px 2px 1px #2648ed;
     border-radius: 50%;
 }
 
-.cPrincipal{
 
-}
 .video img{
-    position: absolute;
+    position: relative;
     top: 35px;
-    right: 20%;
-    height: 250px;
-    width: 400px;
+    left: -250px;
+    height: 10em;
+    width: 15em;
     border: 8px ridge #ffffff;
     border-radius: 15px;
-    box-shadow: 20px 4px 20px 10px #2648ed;
+    box-shadow: 1px 4px 2px 1px #2648ed;
     z-index: 2;
 }
 
-.audio{
+audio{
     position: absolute;
-    left: 60%;
-    bottom: 10px;
+    left: 35%;
+    bottom: 30px;
+    z-index: 4;
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 1px rgb(207, 58, 145) ;
 }
 
 .footer{
-    background-color: bisque;
+    display: flex;
+    position: relative;
+    top: -3em;
 }
 
 .linha{
@@ -81,9 +93,16 @@
 
 .social{
     display: flex;
-    height: 100px;
+    justify-content: center;
+    height: 80px;
+    width: 100vw;
+    
 }
 
-.social .item {
-   flex: 1;
+img {
+   height: 50px;
+   width: 50px;
+   margin-right: 10px;
+   margin-top: 10px;
+
 }
